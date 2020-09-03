@@ -158,7 +158,7 @@ This would happen at the TTL set when configuring the secret backend:
 
 
 ```
-vault token revoke -mode=path gcp_app_sa
+vault token revoke -mode=path gcp_cicd_sa/key/storage_admin
 ```
 
 # Continuing Resources:
