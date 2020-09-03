@@ -39,10 +39,11 @@ module "vault" {
 
 module "iap_bastion" {
   source  = "terraform-google-modules/bastion-host/google"
+  version = "~>2.7"
+
   name    = "vault-bastion"
   tags    = ["allow-vault"]
   project = var.project_id
-  region  = var.region
   zone    = var.zone
   network = module.vault.vault_network
   subnet  = module.vault.vault_subnet

@@ -38,12 +38,6 @@ variable "kms_keyring" {
   type        = string
 }
 
-variable "region" {
-  description = "Region where Vault and Bastion will live"
-  type        = string
-  default     = "us-west1"
-}
-
 variable "zone" {
   description = "Zone where bastion will live"
   type        = string
